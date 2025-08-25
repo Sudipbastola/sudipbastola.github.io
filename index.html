@@ -1,86 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Full Stack Development Portfolio</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="styles.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration Form</title>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container">
-            <a class="navbar-brand" href="#">My Portfolio</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#fullstack">Full Stack</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#html">HTML</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#css">CSS</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#bootstrap">Bootstrap</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#javascript">JavaScript</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    <div class="container mt-5">
-        <section id="fullstack" class="mb-5">
-            <h2>What is Full Stack Development?</h2>
-            <p>Full stack development involves working on both front-end (client-side) and back-end (server-side) portions of web applications.</p>
-            
-            <div class="card mb-3">
-                <img src="https://www.interviewbit.com/blog/wp-content/uploads/2021/10/full-stack-development-1024x512.png" class="card-img-top" alt="Full Stack Diagram">
-                <div class="card-body">
-                    <h5 class="card-title">Full Stack Architecture</h5>
-                    <p class="card-text">This diagram shows the components of a full stack application including frontend, backend, and database.</p>
-                    <a href="demos/fullstack-diagram.html" class="btn btn-primary">View Detailed Explanation</a>
-                </div>
-            </div>
-        </section>
-
-        <section id="html" class="mb-5">
-            <h2>HTML Demonstration</h2>
-            <p>HTML (HyperText Markup Language) is the standard markup language for creating web pages.</p>
-            <a href="demos/html-demo.html" class="btn btn-success">View HTML Demo</a>
-        </section>
-
-        <section id="css" class="mb-5">
-            <h2>CSS Demonstration</h2>
-            <p>CSS (Cascading Style Sheets) is used to style and layout web pages.</p>
-            <a href="demos/css-demo.html" class="btn btn-info">View CSS Demo</a>
-        </section>
-
-        <section id="bootstrap" class="mb-5">
-            <h2>Bootstrap Framework</h2>
-            <p>Bootstrap is a popular CSS framework for developing responsive and mobile-first websites.</p>
-            <a href="demos/bootstrap-demo.html" class="btn btn-warning">View Bootstrap Demo</a>
-        </section>
-
-        <section id="javascript" class="mb-5">
-            <h2>JavaScript</h2>
-            <p>JavaScript is a programming language that enables interactive web pages.</p>
-            <a href="demos/javascript-demo.html" class="btn btn-danger">View JavaScript Demo</a>
-        </section>
-    </div>
-
-    <footer class="bg-dark text-white text-center py-3">
-        <p>© 2025 My Full Stack Portfolio. All rights reserved.</p>
-    </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="script.js"></script>
+  <h2>Register</h2>
+  <form>
+    <label for="name">Full Name</label><br>
+    <input type="text" id="name" name="name" required><br>
+    <label for="email">Email</label><br>
+    <input type="email" id="email" name="email" required><br>
+    <label for="password">Password</label><br>
+    <input type="password" id="password" name="password" required><br>
+    <label for="phone">Phone Number</label><br>
+    <input type="tel" id="phone" name="phone" required><br>
+    <label for="address">Address</label><br>
+    <input type="text" id="address" name="address" required><br>
+    <label for="father_name">Father's Name</label><br>
+    <input type="text" id="father_name" name="father_name" required><br>
+    <label for="mother_name">Mother's Name</label><br>
+    <input type="text" id="mother_name" name="mother_name" required><br>
+    <label>Gender</label><br>
+    <input type="radio" id="male" name="gender" value="male" required>
+    <label for="male">Male</label>
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="female">Female</label>
+    <input type="radio" id="other" name="gender" value="other">
+    <label for="other">Other</label><br><br>
+    <button type="submit">Register</button>
+  </form>
 </body>
 </html>
